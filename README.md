@@ -1,103 +1,105 @@
-🏬 AVM Yönetim ve Finans Takip Sistemi
+🏬 AVM Management and Financial Tracking System
 
-Spring Boot tabanlı bir REST API backend ve React + TypeScript ile geliştirilmiş modern bir web arayüzünden oluşan tam yığın (Full Stack) bir demo uygulamasıdır.
+A full-stack demo application consisting of a Spring Boot–based REST API backend and a modern web interface developed with React + TypeScript.
 
-Bu proje, bir alışveriş merkezindeki mağazaların kira, gelir, gider ve kar/zarar durumlarını takip etmek amacıyla geliştirilmiştir.
+This project was developed to track rent, income, expenses, and profit/loss status of stores inside a shopping mall.
 
-Proje aynı zamanda aşağıdaki konuları uygulamalı olarak göstermek için hazırlanmıştır:
-	•	Nesne Yönelimli Programlama (OOP)
-	•	RESTful API geliştirme
-	•	Full Stack uygulama mimarisi
-	•	Backend–Frontend entegrasyonu
-	•	Finansal veri modelleme
+The project also demonstrates the following concepts in practice:
+	•	Object-Oriented Programming (OOP)
+	•	RESTful API development
+	•	Full Stack application architecture
+	•	Backend–Frontend integration
+	•	Financial data modeling
 
-⸻
-
-🚀 Özellikler
-
-🏪 Mağaza Yönetimi
-	•	Yeni mağaza ekleme
-	•	Mağazaları listeleme
-	•	Mağaza detaylarını görüntüleme
-	•	Mağaza silme
-
-Mağaza bilgileri:
-	•	Mağaza ID
-	•	Mağaza adı
-	•	Adres
-	•	Kira bilgisi
 
 ⸻
 
-💰 Gelir / Gider Yönetimi
+🚀 Features
 
-Seçilen mağaza için finans kayıtları tutulabilir.
+🏪 Store Management
+	•	Add new stores
+	•	List stores
+	•	View store details
+	•	Delete stores
 
-Eklenebilen kayıtlar:
-	•	Gelir kaydı
-	•	Gider kaydı
+Store information includes:
+	•	Store ID
+	•	Store name
+	•	Address
+	•	Rent information
 
-Her kayıt aşağıdaki bilgileri içerir:
-	•	Tutar
-	•	Açıklama
-	•	Tarih
-
-⸻
-
-📊 Finansal Raporlama
-
-Her mağaza için aşağıdaki özet bilgiler hesaplanabilir:
-	•	Toplam gelir
-	•	Toplam gider
-	•	Net kar / zarar
-
-Raporlar isteğe bağlı olarak tarih aralığı verilerek de alınabilir.
-
-Örnek:
-	•	Başlangıç tarihi
-	•	Bitiş tarihi
 
 ⸻
 
-🌐 Modern Web Arayüzü
+💰 Income / Expense Management
 
-Frontend tarafı React + TypeScript kullanılarak geliştirilmiştir.
+Financial records can be kept for the selected store.
 
-Arayüzde bulunan temel bölümler:
-	•	Mağaza ekleme formu
-	•	Mağaza listesi
-	•	Seçili mağaza paneli
-	•	Gelir ekleme formu
-	•	Gider ekleme formu
-	•	Kar / zarar özet kartları
+Available records:
+	•	Income record
+	•	Expense record
 
-Frontend, backend ile REST API üzerinden haberleşir.
+Each record contains the following information:
+	•	Amount
+	•	Description
+	•	Date
+
+⸻
+
+📊 Financial Reporting
+
+The following summary information can be calculated for each store:
+	•	Total income
+	•	Total expenses
+	•	Net profit / loss
+
+Reports can also be generated optionally by specifying a date range.
+
+Example:
+	•	Start date
+	•	End date
+
+⸻
+
+🌐 Modern Web Interface
+
+The frontend is developed using React + TypeScript.
+
+Main interface components include:
+	•	Store creation form
+	•	Store list
+	•	Selected store panel
+	•	Income entry form
+	•	Expense entry form
+	•	Profit / loss summary cards
+
+The frontend communicates with the backend via a REST API.
+
+⸻
 
 ⚙️ Backend
 
-Backend uygulaması Spring Boot kullanılarak geliştirilmiştir.
-Kullanılan teknolojiler:
+The backend application is developed using Spring Boot.
+
+Technologies used:
 	•	Java 17
 	•	Spring Boot
 	•	Gradle
-	•	REST API mimarisi
+	•	REST API architecture
 
-Backend tarafında bulunan ana controller sınıfları:
+Main controller classes in the backend:
 
-Controller                Görev
-MagazaController          Mağaza CRUD işlemleri
-FinansController          Gelir ve gider kayıtları
-RaporController           Finansal rapor oluşturma
+Controller                Responsibility
+MagazaController          Store CRUD operations
+FinansController          Income and expense records
+RaporController           Financial report generation
 
 💻 Frontend
-
-Frontend uygulaması aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
+The frontend application is developed using the following technologies:
 	•	React
 	•	TypeScript
-	•	CSS
 
-📁 Proje Yapısı
-
+📁 Project Structure
 avm-management-system
 │
 ├── avm.app-main        → Spring Boot backend
