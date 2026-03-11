@@ -99,20 +99,5 @@ The frontend application is developed using the following technologies:
 	•	React
 	•	TypeScript
 
-📁 Project Structure
-avm-management-system
-│
-├── avm.app-main        → Spring Boot backend
-│   ├── controller
-│   ├── model
-│   ├── service
-│   └── manager
-│
-├── avm-frontend        → React frontend
-│   ├── components
-│   ├── services
-│   └── pages
-│
-└── README.md
 
 👨‍💻 Developer : Emir Eser
